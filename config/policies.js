@@ -19,4 +19,10 @@ module.exports.policies = {
 
   // '*': true,
 
+  '*': ['isAuthorized'],
+  'UserController': { // Name of your controller
+    'login': true, // We dont need authorization here, allowing public access
+  },
+  // 'StudentController':'isAuthorized'
+
 };

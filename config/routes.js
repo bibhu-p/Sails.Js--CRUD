@@ -38,5 +38,7 @@ module.exports.routes = {
   'GET /student/:id':{controller:"StudentController", action:"findOne"},
   'PUT /student/:id':{controller:"StudentController", action:"update"},
   'DELETE /student/:id':{controller:"StudentController", action:"delete"},
+  'POST /user':{controller:"UserController", action:"register"},
+  'POST /login':{controller:"UserController", action:"login"},
 
 };
